@@ -50,20 +50,20 @@
                             <li class="dropdown">
                               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Catalogos <span class="caret"></span></a>
                               <ul class="dropdown-menu">
-                                <li><a href="#">Empresas</a></li>
-                                <li><a href="#">Proveedores</a></li>
-                                <li><a href="#">Tipo de Gasto</a></li>
-                                <li><a href="#">Rutas</a></li>
-                                <li><a href="#">Usuarios</a></li>
+                                <li><a href="{{ route('companies.index') }}">Empresas</a></li>
+                                <li><a href="{{ route('providers.index') }}">Proveedores</a></li>
+                                <li><a href="{{ route('spendings.index') }}">Tipo de Gasto</a></li>
+                                <li><a href="{{ route('routes.index') }}">Rutas</a></li>
+                                <li><a href="{{ route('users.index') }}">Usuarios</a></li>
                                 <li role="separator" class="divider"></li>
-                                <li class="dropdown-header">Nav header</li>
+                                {{--<li class="dropdown-header">Nav header</li>
                                 <li><a href="#">Separated link</a></li>
-                                <li><a href="#">One more separated link</a></li>
+                                <li><a href="#">One more separated link</a></li>--}}
                               </ul>
                             </li>
-                            <li class="active"><a href="#">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                            <li class="active"><a href="#">Liquidaciones</a></li>
+                            <li><a href="#about">Revisión</a></li>
+                            <li><a href="#contact">Contabilidad</a></li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                     {{ Auth::user()->name }} <span class="caret"></span>

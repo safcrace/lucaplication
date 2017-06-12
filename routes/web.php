@@ -20,3 +20,6 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('routes', 'RouteController');
 Route::resource('companies', 'CompanyController');
+Route::resource('providers', 'ProviderController');
+Route::resource('spendings', 'SpendingController');
+Route::resource('users', 'UserController');
